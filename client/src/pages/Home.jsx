@@ -1,5 +1,7 @@
-import { Link } from 'react-router-dom'
-import './Home.css'
+import { Link } from "react-router-dom";
+import "./Home.css";
+import julietProfile from "../assets/Juliet Profile.jpg";
+import kenProfile from "../assets/Ken profile.jpg";
 
 function StatItem({ number, label }) {
   return (
@@ -7,7 +9,7 @@ function StatItem({ number, label }) {
       <span className="stat-number">{number}</span>
       <span className="stat-label">{label}</span>
     </div>
-  )
+  );
 }
 
 function FeatureCard({ icon, title, description }) {
@@ -17,10 +19,18 @@ function FeatureCard({ icon, title, description }) {
       <h3>{title}</h3>
       <p>{description}</p>
     </div>
-  )
+  );
 }
 
-function ProductTeaser({ id, gradient, icon, name, tagline, description, href }) {
+function ProductTeaser({
+  id,
+  gradient,
+  icon,
+  name,
+  tagline,
+  description,
+  href,
+}) {
   return (
     <div className="product-teaser" id={id}>
       <div className="product-teaser-visual" style={{ background: gradient }}>
@@ -30,10 +40,12 @@ function ProductTeaser({ id, gradient, icon, name, tagline, description, href })
         <h3>{name}</h3>
         <p className="product-tagline">{tagline}</p>
         <p>{description}</p>
-        <Link to={href} className="btn btn-outline">Learn More →</Link>
+        <Link to={href} className="btn btn-outline">
+          Learn More →
+        </Link>
       </div>
     </div>
-  )
+  );
 }
 
 export default function Home() {
@@ -54,13 +66,17 @@ export default function Home() {
             <span className="gradient-text"> Everyday Life</span>
           </h1>
           <p className="hero-sub">
-            Nibblr LLC builds thoughtfully crafted, generative AI applications that help
-            you live, eat, and move better — with a personal touch only a family-run studio
-            can deliver.
+            Nibblr LLC builds thoughtfully crafted, generative AI applications
+            that help you live, eat, and move better — with a personal touch
+            only a family-run studio can deliver.
           </p>
           <div className="hero-actions">
-            <Link to="/products" className="btn btn-primary">Explore Our Apps</Link>
-            <Link to="/support" className="btn btn-ghost">Get in Touch</Link>
+            <Link to="/products" className="btn btn-primary">
+              Explore Our Apps
+            </Link>
+            <Link to="/support" className="btn btn-ghost">
+              Get in Touch
+            </Link>
           </div>
           <div className="hero-stats">
             <StatItem number="2" label="AI-Powered Apps" />
@@ -106,14 +122,27 @@ export default function Home() {
           <div className="section-header">
             <span className="section-tag">Why Nibblr</span>
             <h2>Designed with care. Powered by AI.</h2>
-            <p>We believe the best technology feels effortless. Every app we build starts with real user needs and finishes with a product that genuinely delivers.</p>
+            <p>
+              We believe the best technology feels effortless. Every app we
+              build starts with real user needs and finishes with a product that
+              genuinely delivers.
+            </p>
           </div>
           <div className="features-grid">
             <FeatureCard
               icon={
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/>
-                  <path d="M12 8v4l3 3"/>
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z" />
+                  <path d="M12 8v4l3 3" />
                 </svg>
               }
               title="Real-Time AI"
@@ -121,9 +150,18 @@ export default function Home() {
             />
             <FeatureCard
               icon={
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-                  <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4" />
                 </svg>
               }
               title="Privacy First"
@@ -131,11 +169,20 @@ export default function Home() {
             />
             <FeatureCard
               icon={
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-                  <circle cx="9" cy="7" r="4"/>
-                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
                 </svg>
               }
               title="Human-Centered Design"
@@ -143,8 +190,17 @@ export default function Home() {
             />
             <FeatureCard
               icon={
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
                 </svg>
               }
               title="Continuously Improving"
@@ -152,8 +208,17 @@ export default function Home() {
             />
             <FeatureCard
               icon={
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                 </svg>
               }
               title="Built for Quality"
@@ -161,9 +226,18 @@ export default function Home() {
             />
             <FeatureCard
               icon={
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                  <circle cx="12" cy="10" r="3"/>
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
                 </svg>
               }
               title="NYC Roots"
@@ -179,19 +253,31 @@ export default function Home() {
           <div className="section-header">
             <span className="section-tag">Our Products</span>
             <h2>Apps that make a difference</h2>
-            <p>Two AI-powered applications crafted to help you reach your goals — whether you're hitting the gym or exploring a new restaurant.</p>
+            <p>
+              Two AI-powered applications crafted to help you reach your goals —
+              whether you're hitting the gym or exploring a new restaurant.
+            </p>
           </div>
           <div className="products-teaser-grid">
             <ProductTeaser
               id="realfit"
               gradient="linear-gradient(135deg, #1a0533 0%, #4c1d95 50%, #7c3aed 100%)"
               icon={
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
-                  <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
-                  <line x1="6" y1="1" x2="6" y2="4"/>
-                  <line x1="10" y1="1" x2="10" y2="4"/>
-                  <line x1="14" y1="1" x2="14" y2="4"/>
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
+                  <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
+                  <line x1="6" y1="1" x2="6" y2="4" />
+                  <line x1="10" y1="1" x2="10" y2="4" />
+                  <line x1="14" y1="1" x2="14" y2="4" />
                 </svg>
               }
               name="RealFit AI"
@@ -203,9 +289,18 @@ export default function Home() {
               id="menupic"
               gradient="linear-gradient(135deg, #0c1a4b 0%, #0369a1 50%, #0ea5e9 100%)"
               icon={
-                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
-                  <circle cx="12" cy="13" r="4"/>
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="white"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+                  <circle cx="12" cy="13" r="4" />
                 </svg>
               }
               name="MenuPic AI"
@@ -214,8 +309,10 @@ export default function Home() {
               href="/products#menupic"
             />
           </div>
-          <div style={{ textAlign: 'center', marginTop: '40px' }}>
-            <Link to="/products" className="btn btn-primary">View All Products</Link>
+          <div style={{ textAlign: "center", marginTop: "40px" }}>
+            <Link to="/products" className="btn btn-primary">
+              View All Products
+            </Link>
           </div>
         </div>
       </section>
@@ -231,13 +328,25 @@ export default function Home() {
               <div className="ag-core">
                 <svg width="40" height="40" viewBox="0 0 32 32" fill="none">
                   <circle cx="16" cy="16" r="16" fill="url(#about-grad)" />
-                  <path d="M9 20c1.5-4 4.5-6 7-6s5.5 2 7 6" stroke="white" strokeWidth="2.2" strokeLinecap="round"/>
-                  <circle cx="12" cy="13" r="1.5" fill="white"/>
-                  <circle cx="20" cy="13" r="1.5" fill="white"/>
+                  <path
+                    d="M9 20c1.5-4 4.5-6 7-6s5.5 2 7 6"
+                    stroke="white"
+                    strokeWidth="2.2"
+                    strokeLinecap="round"
+                  />
+                  <circle cx="12" cy="13" r="1.5" fill="white" />
+                  <circle cx="20" cy="13" r="1.5" fill="white" />
                   <defs>
-                    <linearGradient id="about-grad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
-                      <stop stopColor="#7c3aed"/>
-                      <stop offset="1" stopColor="#0ea5e9"/>
+                    <linearGradient
+                      id="about-grad"
+                      x1="0"
+                      y1="0"
+                      x2="32"
+                      y2="32"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stopColor="#7c3aed" />
+                      <stop offset="1" stopColor="#0ea5e9" />
                     </linearGradient>
                   </defs>
                 </svg>
@@ -248,20 +357,25 @@ export default function Home() {
             <span className="section-tag">Our Story</span>
             <h2>A family studio with a big mission</h2>
             <p>
-              Nibblr LLC is a U.S.-incorporated, family-owned software studio dedicated to building
-              thoughtfully designed, GenAI-enhanced applications for everyday users. We focus on
-              creating intuitive, reliable tools that help people work, create, and explore new ideas
-              more effectively — across a wide range of topics and use cases.
+              Nibblr LLC is a U.S.-incorporated, family-owned software studio
+              dedicated to building thoughtfully designed, GenAI-enhanced
+              applications for everyday users. We focus on creating intuitive,
+              reliable tools that help people work, create, and explore new
+              ideas more effectively — across a wide range of topics and use
+              cases.
             </p>
             <p>
-              As a modern software company, we combine strong technical engineering with user-centered
-              design principles. Our process spans the full product lifecycle: researching user needs,
-              designing clear and engaging interfaces, building secure and scalable architectures, and
-              continuously refining our apps based on real-world feedback.
+              As a modern software company, we combine strong technical
+              engineering with user-centered design principles. Our process
+              spans the full product lifecycle: researching user needs,
+              designing clear and engaging interfaces, building secure and
+              scalable architectures, and continuously refining our apps based
+              on real-world feedback.
             </p>
             <p>
-              We place a high value on <strong>quality, privacy, and transparency</strong> in how AI
-              is used within our products.
+              We place a high value on{" "}
+              <strong>quality, privacy, and transparency</strong> in how AI is
+              used within our products.
             </p>
           </div>
         </div>
@@ -273,20 +387,29 @@ export default function Home() {
           <div className="section-header">
             <span className="section-tag">Meet the Team</span>
             <h2>The people behind the products</h2>
-            <p>Two co-founders. Decades of combined experience. One shared vision: making AI work for everyone.</p>
+            <p>
+              Two co-founders. Decades of combined experience. One shared
+              vision: making AI work for everyone.
+            </p>
           </div>
           <div className="team-grid">
             <div className="team-card">
-              <div className="team-avatar" style={{ background: 'linear-gradient(135deg, #7c3aed, #c084fc)' }}>
-                <span>JS</span>
-              </div>
+              <div
+                className="team-avatar"
+                style={{
+                  backgroundImage: `url(${julietProfile})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              ></div>
               <div className="team-info">
                 <h3>Juliet Sun</h3>
                 <span className="team-role">Chief Executive Officer</span>
                 <p>
-                  A designer and UX expert, Juliet leads product vision and user experience. She
-                  ensures that every Nibblr app feels intuitive, beautiful, and genuinely helpful,
-                  with a strong emphasis on accessibility and ease of use.
+                  A designer and UX expert, Juliet leads product vision and user
+                  experience. She ensures that every Nibblr app feels intuitive,
+                  beautiful, and genuinely helpful, with a strong emphasis on
+                  accessibility and ease of use.
                 </p>
                 <div className="team-tags">
                   <span>UX Design</span>
@@ -297,17 +420,23 @@ export default function Home() {
             </div>
 
             <div className="team-card">
-              <div className="team-avatar" style={{ background: 'linear-gradient(135deg, #0ea5e9, #38bdf8)' }}>
-                <span>KR</span>
-              </div>
+              <div
+                className="team-avatar"
+                style={{
+                  backgroundImage: `url(${kenProfile})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              ></div>
               <div className="team-info">
                 <h3>Ken Rubin</h3>
                 <span className="team-role">Chief Technology Officer</span>
                 <p>
-                  A seasoned programmer and software architect with over 40 years of experience, Ken
-                  is responsible for the technical direction of the company. He designs and implements
-                  the core systems that power our GenAI capabilities, emphasizing reliability,
-                  performance, and security.
+                  A seasoned programmer and software architect with over 40
+                  years of experience, Ken is responsible for the technical
+                  direction of the company. He designs and implements the core
+                  systems that power our GenAI capabilities, emphasizing
+                  reliability, performance, and security.
                 </p>
                 <div className="team-tags">
                   <span>Software Architecture</span>
@@ -328,13 +457,20 @@ export default function Home() {
         </div>
         <div className="cta-content">
           <h2>Ready to experience the difference?</h2>
-          <p>Explore our AI-powered apps or reach out — we'd love to hear from you.</p>
+          <p>
+            Explore our AI-powered apps or reach out — we'd love to hear from
+            you.
+          </p>
           <div className="cta-actions">
-            <Link to="/products" className="btn btn-white">See Our Products</Link>
-            <Link to="/support" className="btn btn-ghost-white">Contact Us</Link>
+            <Link to="/products" className="btn btn-white">
+              See Our Products
+            </Link>
+            <Link to="/support" className="btn btn-ghost-white">
+              Contact Us
+            </Link>
           </div>
         </div>
       </section>
     </main>
-  )
+  );
 }

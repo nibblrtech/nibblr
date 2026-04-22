@@ -668,6 +668,9 @@
   font-weight: 800;
   color: white;
   letter-spacing: -1px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
 }
 
 .team-info h3 {
