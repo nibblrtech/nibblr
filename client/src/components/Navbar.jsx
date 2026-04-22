@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../assets/logodarkgroundcropped.png";
+import logoDark from "../assets/logodarkgroundcropped.png";
+import logoLight from "../assets/logo cropped lt ground.png";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -23,7 +24,10 @@ export default function Navbar() {
     <header className={`navbar${scrolled ? " scrolled" : ""}`}>
       <div className="navbar-inner">
         <Link to="/" className="navbar-logo">
-          <img src={logo} alt="Nibblr logo" className="navbar-logo-img" />
+          <div className="navbar-logo-wrapper">
+            <img src={logoDark} alt="Nibblr logo" className="navbar-logo-img navbar-logo-dark" />
+            <img src={logoLight} alt="Nibblr logo" className="navbar-logo-img navbar-logo-light" />
+          </div>
         </Link>
 
         <nav
