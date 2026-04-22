@@ -4,14 +4,16 @@
   left: 0;
   right: 0;
   z-index: 100;
-  transition: background 0.3s, box-shadow 0.3s;
+  transition:
+    background 0.3s,
+    box-shadow 0.3s;
   padding: 0 24px;
 }
 
 .navbar.scrolled {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(12px);
-  box-shadow: 0 1px 0 rgba(0,0,0,0.08);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
 }
 
 .navbar-inner {
@@ -35,6 +37,12 @@
   transition: opacity 0.2s;
 }
 
+.navbar-logo-img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+}
+
 .navbar.scrolled .navbar-logo {
   color: #1e1b4b;
 }
@@ -51,12 +59,14 @@
 
 .navbar-links a {
   text-decoration: none;
-  color: rgba(255,255,255,0.85);
+  color: rgba(255, 255, 255, 0.85);
   font-size: 0.95rem;
   font-weight: 500;
   padding: 8px 14px;
   border-radius: 8px;
-  transition: color 0.2s, background 0.2s;
+  transition:
+    color 0.2s,
+    background 0.2s;
 }
 
 .navbar.scrolled .navbar-links a {
@@ -65,7 +75,7 @@
 
 .navbar-links a:hover {
   color: white;
-  background: rgba(255,255,255,0.15);
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .navbar.scrolled .navbar-links a:hover {
@@ -89,7 +99,9 @@
   font-weight: 600;
   margin-left: 8px;
   box-shadow: 0 4px 15px rgba(124, 58, 237, 0.35);
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
 }
 
 .navbar-links a.nav-cta:hover {
@@ -115,19 +127,29 @@
   height: 2px;
   background: white;
   border-radius: 2px;
-  transition: transform 0.3s, opacity 0.3s;
+  transition:
+    transform 0.3s,
+    opacity 0.3s;
 }
 
 .navbar.scrolled .hamburger span {
   background: #1e1b4b;
 }
 
-.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
-.hamburger.open span:nth-child(2) { opacity: 0; }
-.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.hamburger.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
 
 @media (max-width: 768px) {
-  .hamburger { display: flex; }
+  .hamburger {
+    display: flex;
+  }
 
   .navbar-links {
     display: none;
@@ -140,10 +162,12 @@
     flex-direction: column;
     padding: 24px;
     gap: 8px;
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  .navbar-links.open { display: flex; }
+  .navbar-links.open {
+    display: flex;
+  }
 
   .navbar-links a {
     width: 100%;
