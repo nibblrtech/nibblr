@@ -406,10 +406,10 @@ export default function Home() {
                 <h3>Juliet Sun</h3>
                 <span className="team-role">Chief Executive Officer</span>
                 <p>
-                  A designer and UX expert, Juliet leads product vision and user
-                  experience. She ensures that every Nibblr app feels intuitive,
-                  beautiful, and genuinely helpful, with a strong emphasis on
-                  accessibility and ease of use.
+                  A product designer and UX expert, Juliet leads product vision
+                  and user experience. She ensures that every Nibblr app feels
+                  intuitive, beautiful, and genuinely helpful, with a strong
+                  emphasis on accessibility and ease of use.
                 </p>
                 <div className="team-tags">
                   <span>UX Design</span>
