@@ -682,7 +682,7 @@
 
 .team-role {
   font-size: 0.85rem;
-  color: #7c3aed;
+  color: #144dbe;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -704,8 +704,8 @@
 }
 
 .team-tags span {
-  background: #f5f3ff;
-  color: #7c3aed;
+  background: #edf8ff;
+  color: #144dbe;
   font-size: 0.78rem;
   font-weight: 500;
   padding: 4px 10px;
