@@ -6,7 +6,7 @@
   align-items: center;
   overflow: hidden;
   padding: 120px 24px 80px;
-  background: #0f0a1e;
+  background: linear-gradient(135deg, #0f0a1e 0%, #1a1a2e 100%);
 }
 
 .hero-bg {
@@ -185,7 +185,7 @@
 
 .app-bar {
   height: 8px;
-  background: linear-gradient(90deg, #7c3aed, #0ea5e9);
+  background: #356FE3;
   border-radius: 4px;
   margin-bottom: 4px;
 }
@@ -268,18 +268,19 @@
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, #7c3aed 0%, #0ea5e9 100%);
+  background: #356FE3;
   color: white;
-  box-shadow: 0 4px 20px rgba(124, 58, 237, 0.4);
+  box-shadow: 0 4px 20px rgba(53, 111, 227, 0.4);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(124, 58, 237, 0.5);
+  box-shadow: 0 8px 30px rgba(53, 111, 227, 0.5);
 }
 
 .btn-ghost {
   background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
   color: rgba(255,255,255,0.85);
   border: 1px solid rgba(255,255,255,0.15);
 }
@@ -291,13 +292,13 @@
 
 .btn-outline {
   background: transparent;
-  color: #7c3aed;
-  border: 2px solid #7c3aed;
+  color: #356FE3;
+  border: 2px solid #356FE3;
   padding: 12px 24px;
 }
 
 .btn-outline:hover {
-  background: #7c3aed;
+  background: #356FE3;
   color: white;
 }
 

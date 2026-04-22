@@ -117,13 +117,13 @@
 }
 
 .navbar-links a.nav-cta {
-  background: linear-gradient(135deg, #7c3aed, #0ea5e9);
+  background: #356FE3;
   color: white !important;
   padding: 9px 20px;
   border-radius: 50px;
   font-weight: 600;
   margin-left: 8px;
-  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.35);
+  box-shadow: 0 4px 15px rgba(53, 111, 227, 0.35);
   transition:
     transform 0.2s,
     box-shadow 0.2s;
@@ -131,8 +131,8 @@
 
 .navbar-links a.nav-cta:hover {
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.45);
-  background: linear-gradient(135deg, #7c3aed, #0ea5e9) !important;
+  box-shadow: 0 6px 20px rgba(53, 111, 227, 0.45);
+  background: #356FE3 !important;
 }
 
 .hamburger {
