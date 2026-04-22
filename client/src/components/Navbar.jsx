@@ -25,8 +25,16 @@ export default function Navbar() {
       <div className="navbar-inner">
         <Link to="/" className="navbar-logo">
           <div className="navbar-logo-wrapper">
-            <img src={logoDark} alt="Nibblr logo" className="navbar-logo-img navbar-logo-dark" />
-            <img src={logoLight} alt="Nibblr logo" className="navbar-logo-img navbar-logo-light" />
+            <img
+              src={logoDark}
+              alt="Nibblr logo"
+              className="navbar-logo-img navbar-logo-dark"
+            />
+            <img
+              src={logoLight}
+              alt="Nibblr logo"
+              className="navbar-logo-img navbar-logo-light"
+            />
           </div>
         </Link>
 
