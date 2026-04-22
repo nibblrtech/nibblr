@@ -117,7 +117,7 @@
 }
 
 .navbar-links a.nav-cta {
-  background: #356FE3;
+  background: #356fe3;
   color: white !important;
   padding: 9px 20px;
   border-radius: 50px;
@@ -132,7 +132,7 @@
 .navbar-links a.nav-cta:hover {
   transform: translateY(-1px);
   box-shadow: 0 6px 20px rgba(53, 111, 227, 0.45);
-  background: #356FE3 !important;
+  background: #356fe3 !important;
 }
 
 .hamburger {

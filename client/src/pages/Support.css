@@ -72,7 +72,7 @@
 
 .support-header-content p {
   font-size: 1.1rem;
-  color: rgba(255,255,255,0.65);
+  color: rgba(255, 255, 255, 0.65);
   line-height: 1.7;
 }
 
@@ -102,11 +102,13 @@
   align-items: center;
   text-align: center;
   gap: 10px;
-  transition: box-shadow 0.25s, transform 0.25s;
+  transition:
+    box-shadow 0.25s,
+    transform 0.25s;
 }
 
 .quick-link-card:hover {
-  box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
   transform: translateY(-3px);
 }
 
@@ -323,7 +325,7 @@
   border: 1px solid #e2e8f0;
   border-radius: 24px;
   padding: 40px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
 }
 
 .contact-form h3 {
@@ -366,7 +368,9 @@
   font-size: 0.95rem;
   color: #0f172a;
   background: white;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
   box-sizing: border-box;
   font-family: inherit;
   outline: none;
@@ -413,7 +417,9 @@
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
   box-shadow: 0 4px 20px rgba(124, 58, 237, 0.35);
 }
 
