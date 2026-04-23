@@ -281,8 +281,8 @@ export default function Home() {
                 </svg>
               }
               name="RealFit AI"
-              tagline="Your Intelligent Fitness Companion"
-              description="Personalized AI workout planning, smart nutrition guidance, and real-time progress analytics — all tailored to your unique body and goals."
+              tagline="See How Clothes Fit Before You Buy"
+              description="AI-powered virtual fitting application combining your full-body or headshot photo with product snapshots to generate personalized photo-realistic try-on images. See how clothes fit, drape, and look on you before you buy."
               href="/products#realfit"
             />
             <ProductTeaser
