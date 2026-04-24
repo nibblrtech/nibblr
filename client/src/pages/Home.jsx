@@ -27,6 +27,7 @@ function FeatureCard({ icon, title, description }) {
 function ProductTeaser({
   id,
   gradient,
+  iconBackground,
   icon,
   name,
   tagline,
@@ -36,7 +37,12 @@ function ProductTeaser({
   return (
     <div className="product-teaser" id={id}>
       <div className="product-teaser-visual" style={{ background: gradient }}>
-        <div className="product-teaser-icon">{icon}</div>
+        <div
+          style={{ background: iconBackground }}
+          className="product-teaser-icon"
+        >
+          {icon}
+        </div>
       </div>
       <div className="product-teaser-content">
         <h3>{name}</h3>
@@ -263,12 +269,13 @@ export default function Home() {
           <div className="products-teaser-grid">
             <ProductTeaser
               id="realfit"
-              gradient="linear-gradient(135deg, #1a0533 0%, #4c1d95 50%, #7c3aed 100%)"
+              gradient="linear-gradient(135deg, #290A6F 0%, #8B5CF6 50%, #D1BDFF 100%)"
+              iconBackground="rgba(255, 255, 255, 0.15)"
               icon={
                 <img
                   src={RealFitAILogo}
                   alt="RealFit AI Logo"
-                  style={{ width: "48px", height: "48px" }}
+                  style={{ width: "70px", height: "70px" }}
                 />
               }
               name="RealFit AI"
@@ -278,12 +285,13 @@ export default function Home() {
             />
             <ProductTeaser
               id="menupic"
-              gradient="linear-gradient(135deg, #0c1a4b 0%, #0369a1 50%, #0ea5e9 100%)"
+              gradient="linear-gradient(135deg, #356FE3 0%, #84ADFF 50%, #B4CEFF 100%)"
+              iconBackground="rgba(255, 255, 255, 0.85)"
               icon={
                 <img
                   src={MenuPicAILogo}
                   alt="MenuPic AI Logo"
-                  style={{ width: "48px", height: "48px" }}
+                  style={{ width: "70px", height: "70px" }}
                 />
               }
               name="MenuPic AI"
