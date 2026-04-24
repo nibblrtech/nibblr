@@ -544,64 +544,14 @@
   justify-content: center;
 }
 
-.about-graphic {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.ag-ring {
-  position: absolute;
-  border-radius: 50%;
-  border: 1px solid;
-  animation: spin-ring linear infinite;
-}
-
-.ag-ring-1 {
-  width: 200px;
-  height: 200px;
-  border-color: rgba(124, 58, 237, 0.3);
-  animation-duration: 20s;
-}
-
-.ag-ring-2 {
-  width: 148px;
-  height: 148px;
-  border-color: rgba(14, 165, 233, 0.3);
-  animation-duration: 15s;
-  animation-direction: reverse;
-}
-
-.ag-ring-3 {
-  width: 96px;
-  height: 96px;
-  border-color: rgba(192, 132, 252, 0.3);
-  animation-duration: 10s;
-}
-
-@keyframes spin-ring {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.ag-core {
-  position: relative;
-  z-index: 1;
-  width: 64px;
-  height: 64px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.about-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  filter: brightness(0.95) contrast(1.05);
 }
 
 .about-content .section-tag {

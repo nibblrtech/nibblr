@@ -4,6 +4,7 @@ import julietProfile from "../assets/Juliet Profile.jpg";
 import kenProfile from "../assets/Ken profile.jpg";
 import RealFitAILogo from "../assets/RealFitAILogo.png";
 import MenuPicAILogo from "../assets/MenuPicAILogo.png";
+import FamilyStudioImage from "../assets/Family Studio 1.png";
 
 function StatItem({ number, label }) {
   return (
@@ -312,38 +313,12 @@ export default function Home() {
       {/* ── ABOUT ── */}
       <section className="about-section" id="about">
         <div className="section-inner about-inner">
-          <div className="about-visual" aria-hidden="true">
-            <div className="about-graphic">
-              <div className="ag-ring ag-ring-1" />
-              <div className="ag-ring ag-ring-2" />
-              <div className="ag-ring ag-ring-3" />
-              <div className="ag-core">
-                <svg width="40" height="40" viewBox="0 0 32 32" fill="none">
-                  <circle cx="16" cy="16" r="16" fill="url(#about-grad)" />
-                  <path
-                    d="M9 20c1.5-4 4.5-6 7-6s5.5 2 7 6"
-                    stroke="white"
-                    strokeWidth="2.2"
-                    strokeLinecap="round"
-                  />
-                  <circle cx="12" cy="13" r="1.5" fill="white" />
-                  <circle cx="20" cy="13" r="1.5" fill="white" />
-                  <defs>
-                    <linearGradient
-                      id="about-grad"
-                      x1="0"
-                      y1="0"
-                      x2="32"
-                      y2="32"
-                      gradientUnits="userSpaceOnUse"
-                    >
-                      <stop stopColor="#7c3aed" />
-                      <stop offset="1" stopColor="#0ea5e9" />
-                    </linearGradient>
-                  </defs>
-                </svg>
-              </div>
-            </div>
+          <div className="about-visual">
+            <img
+              src={FamilyStudioImage}
+              alt="Family Studio"
+              className="about-image"
+            />
           </div>
           <div className="about-content">
             <span className="section-tag">Our Story</span>
