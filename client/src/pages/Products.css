@@ -1,12 +1,12 @@
 /* ── PAGE HEADER ── */
 .products-page {
-  padding-top: 72px;
+  background: #0f0a1e;
 }
 
 .products-header {
   position: relative;
   background: linear-gradient(135deg, #0f0a1e 0%, #1a1a2e 100%);
-  padding: 0px 24px 96px;
+  padding: 72px 24px 96px;
   text-align: center;
   overflow: hidden;
 }
