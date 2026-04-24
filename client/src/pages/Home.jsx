@@ -75,8 +75,8 @@ export default function Home() {
           </h1>
           <p className="hero-sub">
             Nibblr LLC builds thoughtfully crafted, generative AI applications
-            that help you live, eat, and move better — with a personal touch
-            only a family-run studio can deliver.
+            that help to make life easier — with a personal touch only a
+            family-run studio can deliver.
           </p>
           <div className="hero-actions">
             <Link to="/products" className="btn btn-primary">
@@ -263,7 +263,8 @@ export default function Home() {
             <h2>Apps that make a difference</h2>
             <p>
               Two AI-powered applications crafted to help you reach your goals —
-              whether you're hitting the gym or exploring a new restaurant.
+              whether you're shopping for a new outfit or exploring a new
+              restaurant.
             </p>
           </div>
           <div className="products-teaser-grid">
@@ -280,7 +281,7 @@ export default function Home() {
               }
               name="RealFit AI"
               tagline="See How Clothes Fit Before You Buy"
-              description="AI-powered virtual fitting application combining your full-body or headshot photo with product snapshots to generate personalized photo-realistic try-on images. See how clothes fit, drape, and look on you before you buy."
+              description="RealFit AI transforms online shopping with hyper-realistic virtual try-ons. By using your personal profile data, it shows how clothes and accessories look on your body in real time— helping you understand fit, style, and proportion instantly. Shop with clarity, confidence, and zero guesswork, wherever you are."
               href="/products#realfit"
             />
             <ProductTeaser
@@ -295,8 +296,8 @@ export default function Home() {
                 />
               }
               name="MenuPic AI"
-              tagline="Scan Any Menu. Know Everything."
-              description="Point your camera at any restaurant menu and get instant AI-powered nutritional info, allergen alerts, personalized dish recommendations, and live translation."
+              tagline="See Your Food Before You Order"
+              description="MenuPic AI transforms restaurant menus into clear, visual, and helpful insights. With a quick scan, users can preview dishes with AI-generated images, translate menu descriptions, and view nutrition information—making it easier to discover new foods and order with confidence anywhere in the world."
               href="/products#menupic"
             />
           </div>
@@ -358,7 +359,7 @@ export default function Home() {
             <p>
               As a modern software company, we combine strong technical
               engineering with user-centered design principles. Our process
-              spans the full product lifecycle: researching user needs,
+              spans the full product lifecycle: researching user pain points,
               designing clear and engaging interfaces, building secure and
               scalable architectures, and continuously refining our apps based
               on real-world feedback.
@@ -400,7 +401,7 @@ export default function Home() {
                   A product designer and UX expert, Juliet leads product vision
                   and user experience. She ensures that every Nibblr app feels
                   intuitive, beautiful, and genuinely helpful, with a strong
-                  emphasis on accessibility and ease of use.
+                  emphasis on functionality, usability and presentation.
                 </p>
                 <div className="team-tags">
                   <span>UX Design</span>
@@ -423,11 +424,11 @@ export default function Home() {
                 <h3>Ken Rubin</h3>
                 <span className="team-role">Chief Technology Officer</span>
                 <p>
-                  A seasoned programmer and software architect with over 40
-                  years of experience, Ken is responsible for the technical
-                  direction of the company. He designs and implements the core
-                  systems that power our GenAI capabilities, emphasizing
-                  reliability, performance, and security.
+                  A seasoned programmer and software architect with 40 years of
+                  experience, Ken is responsible for the technical direction of
+                  the company. He designs and implements the core systems that
+                  power our GenAI capabilities, emphasizing reliability,
+                  performance, and security.
                 </p>
                 <div className="team-tags">
                   <span>Software Architecture</span>
