@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 import julietProfile from "../assets/Juliet Profile.jpg";
 import kenProfile from "../assets/Ken profile.jpg";
+import RealFitAILogo from "../assets/RealFitAILogo.png";
+import MenuPicAILogo from "../assets/MenuPicAILogo.png";
 
 function StatItem({ number, label }) {
   return (
@@ -263,22 +265,11 @@ export default function Home() {
               id="realfit"
               gradient="linear-gradient(135deg, #1a0533 0%, #4c1d95 50%, #7c3aed 100%)"
               icon={
-                <svg
-                  width="48"
-                  height="48"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="white"
-                  strokeWidth="1.8"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
-                  <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
-                  <line x1="6" y1="1" x2="6" y2="4" />
-                  <line x1="10" y1="1" x2="10" y2="4" />
-                  <line x1="14" y1="1" x2="14" y2="4" />
-                </svg>
+                <img
+                  src={RealFitAILogo}
+                  alt="RealFit AI Logo"
+                  style={{ width: "48px", height: "48px" }}
+                />
               }
               name="RealFit AI"
               tagline="See How Clothes Fit Before You Buy"
@@ -289,19 +280,11 @@ export default function Home() {
               id="menupic"
               gradient="linear-gradient(135deg, #0c1a4b 0%, #0369a1 50%, #0ea5e9 100%)"
               icon={
-                <svg
-                  width="48"
-                  height="48"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="white"
-                  strokeWidth="1.8"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
-                  <circle cx="12" cy="13" r="4" />
-                </svg>
+                <img
+                  src={MenuPicAILogo}
+                  alt="MenuPic AI Logo"
+                  style={{ width: "48px", height: "48px" }}
+                />
               }
               name="MenuPic AI"
               tagline="Scan Any Menu. Know Everything."
