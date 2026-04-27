@@ -200,8 +200,8 @@ export default function Products() {
           <h1>AI that works as hard as you do</h1>
           <p>
             Two carefully crafted applications built to empower your daily life
-            — from the gym to the dining table. Each powered by state-of-the-art
-            generative AI.
+            — from the wardrobe to the dining table. Each powered by
+            state-of-the-art generative AI.
           </p>
         </div>
       </header>
@@ -265,17 +265,15 @@ export default function Products() {
           </svg>
         }
         name="MenuPic AI"
-        tagline="Scan Any Menu. Know Everything."
+        tagline="See Your Food Before You Order"
         description="Dining out has never been this effortless. Point your camera at any restaurant menu — printed, chalkboard, or digital — and let AI do the heavy lifting."
-        longDescription="MenuPic AI instantly analyzes menus using advanced computer vision and generative AI to give you complete nutritional information, allergen warnings, personalized dish recommendations based on your dietary preferences, and real-time translation for menus in foreign languages. Perfect for travelers, health-conscious diners, and anyone with dietary restrictions."
+        longDescription="MenuPic AI instantly understands restaurant menus with AI-powered dish images, menu translations and nutrition insights. Point your camera at any menu and turn unfamiliar dish names into clear visual previews, translated descriptions and estimated calorie information- so you can order with confidence and discover new foods anywhere in the world."
         features={[
           "Instant menu scanning using your phone camera — no typing required",
-          "Complete nutritional breakdown for every dish",
-          "Allergen detection and dietary restriction filtering (vegan, gluten-free, etc.)",
-          "AI-powered personalized dish recommendations based on your taste profile",
-          "Real-time menu translation in 40+ languages",
-          "Price-to-value analysis and popularity rankings",
-          "Offline mode for areas with limited connectivity",
+          "See AI food images before you order",
+          "Translate menus into your language",
+          "Check calories & nutrition information at a glance",
+          "Perfect for travelers, health-conscious diners, and foodies exploring new cuisines",
         ]}
         badges={["Camera AI", "Nutrition", "Travel"]}
       />
