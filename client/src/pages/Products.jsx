@@ -206,30 +206,6 @@ export default function Products() {
         </div>
       </header>
 
-      {/* ── PRODUCT NAV ── */}
-      <nav className="product-nav" aria-label="Product navigation">
-        <div className="product-nav-inner">
-          <a href="#realfit" className="product-nav-item">
-            <span
-              className="pni-dot"
-              style={{
-                background: "linear-gradient(135deg, #7c3aed, #c084fc)",
-              }}
-            />
-            RealFit AI
-          </a>
-          <a href="#menupic" className="product-nav-item">
-            <span
-              className="pni-dot"
-              style={{
-                background: "linear-gradient(135deg, #0ea5e9, #38bdf8)",
-              }}
-            />
-            MenuPic AI
-          </a>
-        </div>
-      </nav>
-
       {/* ── REALFIT AI ── */}
       <ProductSection
         id="realfit"
