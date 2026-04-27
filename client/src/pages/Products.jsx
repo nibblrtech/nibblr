@@ -267,7 +267,7 @@ export default function Products() {
         name="MenuPic AI"
         tagline="See Your Food Before You Order"
         description="Dining out has never been this effortless. Point your camera at any restaurant menu — printed, chalkboard, or digital — and let AI do the heavy lifting."
-        longDescription="MenuPic AI instantly understands restaurant menus with AI-powered dish images, menu translations and nutrition insights. Point your camera at any menu and turn unfamiliar dish names into clear visual previews, translated descriptions and estimated calorie information- so you can order with confidence and discover new foods anywhere in the world."
+        longDescription="MenuPic AI instantly helps you to understand restaurant menus with AI-powered dish images, menu translations and nutrition insights. Point your camera at any menu and turn unfamiliar dish names into clear visual previews, translated descriptions and estimated calorie information- so you can order with confidence and discover new foods anywhere in the world."
         features={[
           "Instant menu scanning using your phone camera — no typing required",
           "See AI food images before you order",
