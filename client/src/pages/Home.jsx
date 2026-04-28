@@ -71,7 +71,6 @@ export default function Home() {
           <div className="hero-grid" />
         </div>
         <div className="hero-content">
-          <div className="hero-badge">🚀 GenAI-Powered Applications</div>
           <h1 className="hero-heading">
             AI That Works for
             <span className="gradient-text"> Everyday Life</span>
