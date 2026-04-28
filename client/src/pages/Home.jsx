@@ -5,6 +5,8 @@ import kenProfile from "../assets/Ken profile.jpg";
 import RealFitAILogo from "../assets/RealFitAILogo.png";
 import MenuPicAILogo from "../assets/MenuPicAILogo.png";
 import FamilyStudioImage from "../assets/Family Studio 1.png";
+import OutfitImage from "../assets/Outfit no bg.png";
+import TravelDiningImage from "../assets/Traveldining no bg.png";
 
 function StatItem({ number, label }) {
   return (
@@ -95,33 +97,17 @@ export default function Home() {
             <StatItem number="100%" label="Family Owned &amp; Operated" />
           </div>
         </div>
-        <div className="hero-app-preview" aria-hidden="true">
-          <div className="phone-mockup">
-            <div className="phone-screen">
-              <div className="app-ui">
-                <div className="app-bar" />
-                <div className="app-card ai-pulse">
-                  <div className="ai-chip">AI</div>
-                  <div className="content-lines">
-                    <div className="line long" />
-                    <div className="line medium" />
-                    <div className="line short" />
-                  </div>
-                </div>
-                <div className="app-stats-row">
-                  <div className="mini-stat" />
-                  <div className="mini-stat" />
-                  <div className="mini-stat" />
-                </div>
-                <div className="app-card">
-                  <div className="content-lines">
-                    <div className="line long" />
-                    <div className="line medium" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="hero-images" aria-hidden="true">
+          <img
+            src={OutfitImage}
+            alt=""
+            className="hero-image hero-image-left"
+          />
+          <img
+            src={TravelDiningImage}
+            alt=""
+            className="hero-image hero-image-right"
+          />
         </div>
       </section>
 
