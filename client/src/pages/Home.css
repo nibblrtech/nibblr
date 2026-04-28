@@ -172,6 +172,7 @@
   top: 50%;
   transform: translateY(-50%);
   max-width: 190px;
+  opacity: 0.75;
   filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.3));
 }
 
@@ -181,6 +182,7 @@
   top: 50%;
   transform: translateY(-50%);
   max-width: 280px;
+  opacity: 0.75;
   filter: drop-shadow(0 10px 25px rgba(0, 0, 0, 0.3));
 }
 
