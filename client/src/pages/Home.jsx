@@ -70,6 +70,9 @@ export default function Home() {
           <div className="hero-orb hero-orb-3" />
           <div className="hero-grid" />
         </div>
+        <div className="hero-col hero-col-left" aria-hidden="true">
+          <img src={OutfitImage} alt="" className="hero-image" />
+        </div>
         <div className="hero-content">
           <h1 className="hero-heading">
             AI That Works for
@@ -96,17 +99,8 @@ export default function Home() {
             <StatItem number="100%" label="Family Owned &amp; Operated" />
           </div>
         </div>
-        <div className="hero-images" aria-hidden="true">
-          <img
-            src={OutfitImage}
-            alt=""
-            className="hero-image hero-image-left"
-          />
-          <img
-            src={TravelDiningImage}
-            alt=""
-            className="hero-image hero-image-right"
-          />
+        <div className="hero-col hero-col-right" aria-hidden="true">
+          <img src={TravelDiningImage} alt="" className="hero-image" />
         </div>
       </section>
 
