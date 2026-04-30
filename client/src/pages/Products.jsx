@@ -1,4 +1,7 @@
 import "./Products.css";
+import realfitDemoVideo from "../assets/RealFit Demo.MP4";
+import RealFitAILogo from "../assets/RealFitAILogo.png";
+import MenuPicAILogo from "../assets/MenuPicAILogo.png";
 
 function FeaturePill({ children }) {
   return <span className="feature-pill">{children}</span>;
@@ -85,42 +88,23 @@ function ProductSection({
               }}
             />
           </div>
+
           <div
             className="product-icon-wrap"
             style={{ border: `1px solid ${accentColor}50` }}
           >
             {icon}
           </div>
-          <div className="product-phone">
-            <div className="pp-screen">
-              <div
-                className="pp-header"
-                style={{
-                  background: `linear-gradient(90deg, ${accentColor}90, transparent)`,
-                }}
-              />
-              <div className="pp-content">
-                {[0.8, 0.6, 0.9, 0.5, 0.7].map((w, i) => (
-                  <div
-                    key={i}
-                    className="pp-line"
-                    style={{ width: `${w * 100}%`, opacity: 0.6 - i * 0.08 }}
-                  />
-                ))}
-                <div
-                  className="pp-card"
-                  style={{ borderColor: `${accentColor}40` }}
-                >
-                  <div
-                    className="pp-card-line"
-                    style={{ background: accentColor, width: "60%" }}
-                  />
-                  <div className="pp-card-line" style={{ width: "80%" }} />
-                  <div className="pp-card-line" style={{ width: "40%" }} />
-                </div>
-              </div>
-            </div>
-          </div>
+          <video
+            className="product-video-frame"
+            autoPlay
+            muted
+            loop
+            playsInline
+            aria-hidden="true"
+          >
+            <source src={realfitDemoVideo} type="video/mp4" />
+          </video>
           {badges && (
             <div className="product-badges">
               {badges.map((b, i) => (
@@ -212,22 +196,11 @@ export default function Products() {
         gradient="linear-gradient(160deg, #1a0533 0%, #2d1169 50%, #4c1d95 100%)"
         accentColor="#a78bfa"
         icon={
-          <svg
-            width="52"
-            height="52"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="white"
-            strokeWidth="1.6"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M18 8h1a4 4 0 0 1 0 8h-1" />
-            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z" />
-            <line x1="6" y1="1" x2="6" y2="4" />
-            <line x1="10" y1="1" x2="10" y2="4" />
-            <line x1="14" y1="1" x2="14" y2="4" />
-          </svg>
+          <img
+            src={RealFitAILogo}
+            alt="RealFit AI Logo"
+            style={{ width: "70px", height: "70px" }}
+          />
         }
         name="RealFit AI"
         tagline="See How Clothes Fit Before You Buy"
@@ -250,19 +223,11 @@ export default function Products() {
         gradient="linear-gradient(160deg, #0c1a4b 0%, #0c3462 50%, #0369a1 100%)"
         accentColor="#38bdf8"
         icon={
-          <svg
-            width="52"
-            height="52"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="white"
-            strokeWidth="1.6"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
-            <circle cx="12" cy="13" r="4" />
-          </svg>
+          <img
+            src={MenuPicAILogo}
+            alt="MenuPic AI Logo"
+            style={{ width: "70px", height: "70px" }}
+          />
         }
         name="MenuPic AI"
         tagline="See Your Food Before You Order"
