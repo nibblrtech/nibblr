@@ -19,8 +19,8 @@ const faqs = [
     a: 'Absolutely. Privacy is a core value at Nibblr. We use industry-standard encryption, collect only what is necessary to provide our services, and are fully transparent about how data is used. Please review our Privacy Policy for full details.',
   },
   {
-    q: 'RealFit AI: What equipment do I need?',
-    a: 'None — unless you want it! RealFit AI creates workout plans for any situation: gym, home, outdoors, or travel. Simply tell the app what equipment you have available and it builds a plan around that.',
+    q: 'RealFit AI: What photos do I need for a virtual fitting?',
+    a: 'Just a single photo of yourself — either a full-body shot or a headshot. From a headshot, RealFit AI uses your height, weight, and body shape to generate a realistic full-body representation using AI-gen tokens.',
   },
   {
     q: 'MenuPic AI: Which languages does menu translation support?',
