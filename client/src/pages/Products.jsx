@@ -1,5 +1,8 @@
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "./Products.css";
 import realfitDemoVideo from "../assets/RealFit Demo.MP4";
+import menupicDemoVideo from "../assets/MenuPic Demo.MP4";
 import RealFitAILogo from "../assets/RealFitAILogo.png";
 import MenuPicAILogo from "../assets/MenuPicAILogo.png";
 
@@ -66,6 +69,7 @@ function ProductSection({
   longDescription,
   features,
   badges,
+  sourceVideo,
 }) {
   return (
     <section
@@ -103,7 +107,7 @@ function ProductSection({
             playsInline
             aria-hidden="true"
           >
-            <source src={realfitDemoVideo} type="video/mp4" />
+            <source src={sourceVideo} type="video/mp4" />
           </video>
           {badges && (
             <div className="product-badges">
@@ -171,6 +175,17 @@ function ProductSection({
 }
 
 export default function Products() {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash === "#menupic") {
+      const el = document.getElementById("menupic");
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [hash]);
+
   return (
     <main className="products-page">
       {/* ── PAGE HEADER ── */}
@@ -214,6 +229,7 @@ export default function Products() {
           "Token Commerce: Purchase tokens in-app and spend per fitting. Clear, predictable pricing gives you full control over usage and spending. No subscriptions, no surprises.",
         ]}
         badges={["Virtual Fittings", "Fashion", "Styling"]}
+        sourceVideo={realfitDemoVideo}
       />
 
       {/* ── MENUPIC AI ── */}
@@ -241,6 +257,7 @@ export default function Products() {
           "Perfect for travelers, health-conscious diners, and foodies exploring new cuisines",
         ]}
         badges={["Camera AI", "Nutrition", "Travel"]}
+        sourceVideo={menupicDemoVideo}
       />
 
       {/* ── COMING SOON ── */}
