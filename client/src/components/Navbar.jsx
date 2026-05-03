@@ -57,9 +57,6 @@ export default function Navbar() {
           >
             Support
           </Link>
-          <Link to="/support" className="nav-cta">
-            Get in Touch
-          </Link>
         </nav>
 
         <button
